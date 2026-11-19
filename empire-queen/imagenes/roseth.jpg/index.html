@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roseth Sumba | Portafolio Creativo</title>
+    <link rel="stylesheet" href="../../estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Roseth Edelina Sumba Zamora</h1>
+        <p>Directora Creativa · Animadora 2D/3D · Desarrolladora Multimedia</p>
+        <a href="../index.html" class="btn">← Volver al equipo</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>Identidad Creativa</h2>
+            <div style="text-align: center;">
+                <img src="../roseth.jpg.jpeg" alt="Retrato de Roseth Sumba" class="perfil-img">
+            </div>
+            <p>
+                Soy estudiante de Diseño Multimedia en la Universidad Politécnica Salesiana apasionada por la narrativa cinematográfica, la animación 2D/3D y el diseño de experiencias interactivas.
+            </p>
+        </section>
+
+        <section>
+            <h2>Mis Trabajos Creativos</h2>
+            <figure>
+                <img src="../proyecto1.jpg.jpeg" alt="Escena del cortometraje animado Retazos de Nadie">
+                <figcaption><strong>Proyecto 1: "Retazos de Nadie"</strong> — Cortometraje desarrollado mediante modelado 3D e iluminación atmosférica en Blender.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="../proyecto2.jpg.jpeg" alt="Animación 2D y motion graphics en After Effects">
+                <figcaption><strong>Proyecto 2: "Identidad Visual en Movimiento"</strong> — Secuencia de animación 2D creada en Adobe After Effects.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Experiencia Multimedia (Audio y Video)</h2>
+            <p>Muestra de diseño sonoro cinematográfico y clip visual de animación:</p>
+
+            <h3>Paisaje Sonoro Cinematográfico</h3>
+            <audio controls>
+                <source src="../punt ambiente.mp3.mp3" type="audio/mpeg">
+            </audio>
+
+            <h3>Muestra Visual / Showreel</h3>
+            <video controls>
+                <source src="../roseth presentacion.mp4.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section>
+            <h2>Contacto y Colaboraciones</h2>
+            <p><em>Formulario demostrativo para fines académicos.</em></p>
+            <form onsubmit="event.preventDefault(); alert('¡Mensaje de prueba enviado!');">
+                <label for="nombre">Nombre del visitante:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" required>
+
+                <label for="proyecto">Tipo de proyecto:</label>
+                <select id="proyecto" required>
+                    <option value="animacion">Animación 2D / 3D</option>
+                    <option value="cine">Producción Audiovisual</option>
+                    <option value="web">Diseño Web</option>
+                </select>
+
+                <label>Modalidad:</label>
+                <div class="radio-grupo">
+                    <label><input type="radio" name="modalidad" value="freelance" required> Freelance</label>
+                    <label><input type="radio" name="modalidad" value="estudio"> Estudio</label>
+                </div>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" rows="3" required></textarea>
+
+                <button type="submit">Enviar propuesta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="../index.html" style="color: #d4af37;">← Volver a Empire Queen</a></p>
+    </footer>
+
+</body>
+</html>
+
+
