@@ -3,61 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roseth Sumba | Portafolio Creativo</title>
-    <link rel="stylesheet" href="../../estilos.css">
+    <title>Roseth Sumba | Portafolio y Laboratorio Generativo</title>
+    <link rel="stylesheet" href="../estilos.css">
 </head>
 <body>
 
     <header>
         <h1>Roseth Edelina Sumba Zamora</h1>
         <p>Directora Creativa · Animadora 2D/3D · Desarrolladora Multimedia</p>
-        <a href="../index.html" class="btn">← Volver al equipo</a>
+        <a href="../index.html" class="btn">← Volver a Empire Queen Studio</a>
     </header>
 
     <main>
         <section>
             <h2>Identidad Creativa</h2>
             <div style="text-align: center;">
-                <img src="../roseth.jpg.jpeg" alt="Retrato de Roseth Sumba" class="perfil-img">
+                <img src="roseth.jpg.jpeg" alt="Retrato de Roseth Sumba" class="perfil-img">
             </div>
             <p>
-                Soy estudiante de Diseño Multimedia en la Universidad Politécnica Salesiana apasionada por la narrativa cinematográfica, la animación 2D/3D y el diseño de experiencias interactivas.
+                Soy estudiante de Diseño Multimedia en la Universidad Politécnica Salesiana. Combino dirección cinematográfica, narrativa dramática y programación creativa para dar vida a mundos visuales únicos dentro de Empire Queen Studio.
             </p>
         </section>
 
         <section>
             <h2>Mis Trabajos Creativos</h2>
             <figure>
-                <img src="../proyecto1.jpg.jpeg" alt="Escena del cortometraje animado Retazos de Nadie">
-                <figcaption><strong>Proyecto 1: "Retazos de Nadie"</strong> — Cortometraje desarrollado mediante modelado 3D e iluminación atmosférica en Blender.</figcaption>
+                <img src="proyecto1.jpg.jpeg" alt="Escena del cortometraje Retazos de Nadie">
+                <figcaption><strong>Proyecto 1: "Retazos de Nadie"</strong> — Cortometraje de drama psicológico modelado e iluminado en 3D.</figcaption>
             </figure>
-
             <figure>
-                <img src="../proyecto2.jpg.jpeg" alt="Animación 2D y motion graphics en After Effects">
-                <figcaption><strong>Proyecto 2: "Identidad Visual en Movimiento"</strong> — Secuencia de animación 2D creada en Adobe After Effects.</figcaption>
+                <img src="proyecto2.jpg.jpeg" alt="Animación 2D en After Effects">
+                <figcaption><strong>Proyecto 2: "Identidad Visual en Movimiento"</strong> — Pieza de motion graphics y tipografía cinética.</figcaption>
             </figure>
         </section>
 
         <section>
-            <h2>Experiencia Multimedia (Audio y Video)</h2>
-            <p>Muestra de diseño sonoro cinematográfico y clip visual de animación:</p>
-
+            <h2>Experiencia Multimedia</h2>
             <h3>Paisaje Sonoro Cinematográfico</h3>
             <audio controls>
-                <source src="../punt ambiente.mp3.mp3" type="audio/mpeg">
+                <source src="punt ambiente.mp3.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio HTML5.
             </audio>
 
             <h3>Muestra Visual / Showreel</h3>
             <video controls>
-                <source src="../roseth presentacion.mp4.mp4" type="video/mp4">
+                <source src="roseth presentacion.mp4.mp4" type="video/mp4">
+                Tu navegador no soporta video HTML5.
             </video>
+        </section>
+
+        <section id="laboratorio-canvas">
+            <h2>🎨 Mi Laboratorio Generativo: Constelaciones Cinematográficas</h2>
+            <p>
+                Esta obra interactiva transforma reglas matemáticas en composiciones inspiradas en lentes ópticos, prismas de luz y encuadres de cine. <strong>Instrucciones:</strong> Elige una paleta de color, pulsa <em>"Generar nueva composición"</em> para crear un afiche único y descárgalo en formato PNG.
+            </p>
+
+            <div style="text-align: center; margin: 1.5rem 0;">
+                <canvas id="miCanvas" width="760" height="440" style="max-width: 100%; border: 2px solid #d4af37; border-radius: 8px;"></canvas>
+            </div>
+
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+                <button id="btnPaleta1" class="btn" style="border:none; cursor:pointer;">Paleta 1: Cine Noir</button>
+                <button id="btnPaleta2" class="btn" style="border:none; cursor:pointer; background-color:#7597de; color:#fff;">Paleta 2: Neón Cyber</button>
+                <button id="btnGenerar" class="btn" style="border:none; cursor:pointer; background-color:#28a745; color:#fff;">Generar nueva composición</button>
+                <button id="btnGuardar" class="btn" style="border:none; cursor:pointer; background-color:#e63946; color:#fff;">Guardar PNG</button>
+            </div>
         </section>
 
         <section>
             <h2>Contacto y Colaboraciones</h2>
             <p><em>Formulario demostrativo para fines académicos.</em></p>
-            <form onsubmit="event.preventDefault(); alert('¡Mensaje de prueba enviado!');">
-                <label for="nombre">Nombre del visitante:</label>
+            <form onsubmit="event.preventDefault(); alert('¡Propuesta enviada correctamente!');">
+                <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" required>
 
                 <label for="correo">Correo electrónico:</label>
@@ -67,7 +84,7 @@
                 <select id="proyecto" required>
                     <option value="animacion">Animación 2D / 3D</option>
                     <option value="cine">Producción Audiovisual</option>
-                    <option value="web">Diseño Web</option>
+                    <option value="web">Arte Generativo / Web</option>
                 </select>
 
                 <label>Modalidad:</label>
@@ -85,10 +102,9 @@
     </main>
 
     <footer>
-        <p><a href="../index.html" style="color: #d4af37;">← Volver a Empire Queen</a></p>
+        <p><a href="../index.html" style="color: #d4af37;">← Volver a Empire Queen Studio</a></p>
     </footer>
 
+    <script src="canvas.js"></script>
 </body>
 </html>
-
-
